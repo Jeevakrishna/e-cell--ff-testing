@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>E-cell Feedback form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+     <head>
+	 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+  </head>
+ </body>
+
+	<form action="https://sheetdb.io/api/v1/sy8ps03mab1s6" method="POST" id="sheetdb-form">
+		
+	<div class="container">
+
+		<div class="contact-box">
+			<div class="left">
+<h3></h3>
+			</div>
+			<div class="right">
+				<h2>Tech-e's
+					Webovate -Innovatia'22
+				 FEEDBACK FORM</h2>
+				<input type="text" name="data[Your Name]" class="textbox" placeholder="Your Name">
+				<input type="text" name="data[Your Email] " class="textbox" placeholder="Your Email">
+				<input type="text" name="data[Register no]" class="textbox" placeholder="Register no">
+				<input type="text" name="data[Branch]" class="textbox" placeholder="Branch">
+				<textarea placeholder="Message"name="data[Message] "class="textbox" ></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div> 
+	</div>
+</form>
+
+<footer>
+       <div class="footer">
+           <p> Designed by <span>Tech-E</span></p>
+       </div>
+ </footer> 
+   
+   <script >
+   	var form = document.getE1ementById( 'sheetdb-form' ) ;
+form. addEventListener( "submit", e {
+  e. preventDefault();
+  fetch(form.action, {
+   method : "POST",
+   body: new FormData(document.getE1ementById("sheetdb-form")),
+}).then(
+  response response.json()
+).then((html) {
+// you can put any JS code here
+  window. open(' d. html' ,'blank');
+
+ </script>
+
+
+</body>
+</html>
+
+
+
+
+
+ 
